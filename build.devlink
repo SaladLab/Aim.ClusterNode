@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<packages>
+    <package id="Aim.ClusterNode">
+        <files dir="lib/net45" source="core/Aim.ClusterNode/bin/Debug"/>
+    </package>
+</packages>
