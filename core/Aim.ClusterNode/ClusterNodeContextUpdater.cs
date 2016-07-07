@@ -54,7 +54,7 @@ namespace Aim.ClusterNode
                 }
                 else if (typeof(InterfacedActorRef).IsAssignableFrom(fieldType))
                 {
-                    item.FieldValueConstructor = o => Activator.CreateInstance(fieldType, new AkkaActorTarget(o));
+                    item.FieldValueConstructor = o => Activator.CreateInstance(fieldType, new AkkaReceiverTarget(o));
                 }
                 else
                 {
