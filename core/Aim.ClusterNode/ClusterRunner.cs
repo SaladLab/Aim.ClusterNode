@@ -74,7 +74,9 @@ namespace Aim.ClusterNode
                     // "Role"
                     var id = role.GetString();
                     var type = _roleToTypeMap[id];
-                    yield return Tuple.Create(id, type, new HoconValue());
+                    var config = new HoconValue();
+                    config.NewValue(new HoconObject());
+                    yield return Tuple.Create(id, type, config);
                 }
                 else
                 {
